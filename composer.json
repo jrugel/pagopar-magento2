@@ -1,0 +1,22 @@
+{
+    "name": "pagopar/magento2",
+    "type": "library",
+    "description": "Implementación de pasarela de cobros PagoPar para Magento 2.",
+    "keywords": [
+        "pagopar",
+        "magento",
+        "bancard",
+        "tigo money",
+        "billetera personal"
+    ],
+    "homepage": "https://pagopar.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier Rugel",
+            "email": "hola@javierrugel.com",
+            "homepage": "https://javierrugel.com",
+            "role": "Developer"
+        }
+    ]
+}
