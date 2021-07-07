@@ -7,10 +7,10 @@ declare(strict_types=1);
 
 namespace Pagopar\Magento2\Model\Payment;
 
-class Pagopar_cobros extends \Magento\Payment\Model\Method\AbstractMethod
+class Pagopar extends \Magento\Payment\Model\Method\AbstractMethod
 {
 
-    protected $_code = "pagopar_cobros";
+    protected $_code = "pagopar";
     protected $_isOffline = true;
 
     public function isAvailable(

@@ -2,25 +2,31 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
 	<default>
 		<payment>
-			<pagopar_cobros>
+			<pagopar>
 				<active>1</active>
-				<model>Pagopar\Magento2\Model\Payment\Pagopar_cobros</model>
+				<model>Pagopar\Magento2\Model\Payment\Pagopar</model>
 				<order_status>pending</order_status>
-				<title>Pagopar_cobros</title>
+				<title>Pagopar</title>
 				<allowspecific>0</allowspecific>
 				<group>offline</group>
-			</pagopar_cobros>
+			</pagopar>
 		</payment>
 		<carriers>
-			<pagopar_envios>
-				<model>Pagopar\Magento2\Model\Carrier\Pagopar_envios</model>
+			<pagopar>
+				<model>Pagopar\Magento2\Model\Carrier\Pagopar</model>
 				<active>0</active>
-				<title>Pagopar_envios</title>
-				<name>Pagopar_envios</name>
+				<title>Pagopar</title>
+				<name>Pagopar</name>
 				<price>0.00</price>
 				<specificerrmsg>This shipping method is not available. To use this shipping method, please contact us.</specificerrmsg>
 				<sallowspecific>0</sallowspecific>
-			</pagopar_envios>
+			</pagopar>
 		</carriers>
+		<config>
+			<api_key>
+				<public_token/>
+				<private_token/>
+			</api_key>
+		</config>
 	</default>
 </config>

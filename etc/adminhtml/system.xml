@@ -2,8 +2,8 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
 	<system>
 		<section id="payment" sortOrder="1000" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
-			<group id="pagopar_cobros" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
-				<label>Pagopar_cobros</label>
+			<group id="pagopar" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>Pagopar</label>
 				<field id="active" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
 					<label>Enabled</label>
 					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -33,8 +33,8 @@
 			</group>
 		</section>
 		<section id="carriers" sortOrder="1000" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
-			<group id="pagopar_envios" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
-				<label>Pagopar_envios</label>
+			<group id="pagopar" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>Pagopar</label>
 				<field id="active" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
 					<label>Enabled</label>
 					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -64,6 +64,25 @@
 				</field>
 				<field id="specificerrmsg" type="textarea" sortOrder="80" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
 					<label>Displayed Error Message</label>
+				</field>
+			</group>
+		</section>
+		<tab id="pagopar" translate="label" sortOrder="999">
+			<label>Pagopar</label>
+		</tab>
+		<section id="config" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>Configuración</label>
+			<tab>pagopar</tab>
+			<resource>Pagopar_Magento2::config_pagopar_magento2</resource>
+			<group id="api_key" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>API Key</label>
+				<field id="public_token" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Token Público</label>
+					<comment/>
+				</field>
+				<field id="private_token" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Token Privado</label>
+					<comment/>
 				</field>
 			</group>
 		</section>

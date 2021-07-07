@@ -10,11 +10,11 @@ namespace Pagopar\Magento2\Model\Carrier;
 use Magento\Quote\Model\Quote\Address\RateRequest;
 use Magento\Shipping\Model\Rate\Result;
 
-class Pagopar_envios extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements
+class Pagopar extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements
     \Magento\Shipping\Model\Carrier\CarrierInterface
 {
 
-    protected $_code = 'pagopar_envios';
+    protected $_code = 'pagopar';
 
     protected $_isFixed = true;
 

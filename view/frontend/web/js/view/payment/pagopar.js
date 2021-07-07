@@ -8,10 +8,11 @@ define(
         rendererList
     ) {
         'use strict';
+        console.log('view/frontend/web/js/view/payment/pagopar.js');
         rendererList.push(
             {
-                type: 'pagopar_cobros',
-                component: 'Pagopar_Magento2/js/view/payment/method-renderer/pagopar_cobros-method'
+                type: 'pagopar',
+                component: 'Pagopar_Magento2/js/view/payment/method-renderer/pagopar-method'
             }
         );
         return Component.extend({});

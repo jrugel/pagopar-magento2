@@ -37,18 +37,22 @@ Implementación de Pagopar para Magento 2
 
 ## Configuration
 
- - Pagopar_cobros - payment/pagopar_cobros/*
+ - Pagopar - payment/pagopar/*
 
- - Pagopar_envios - carriers/pagopar_envios/*
+ - Pagopar - carriers/pagopar/*
+
+ - Token Público (config/api_key/public_token)
+
+ - Token Privado (config/api_key/private_token)
 
 
 ## Specifications
 
  - Payment Method
-	- Pagopar_cobros
+	- Pagopar
 
  - Shipping Method
-	- pagopar_envios
+	- pagopar
 
 
 ## Attributes
