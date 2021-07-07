@@ -1,34 +1,41 @@
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <body>
-        <referenceBlock name="checkout.root">
-            <arguments>
-                <argument name="jsLayout" xsi:type="array">
-                    <item name="components" xsi:type="array">
-                        <item name="checkout" xsi:type="array">
-                            <item name="children" xsi:type="array">
-                                <item name="sidebar" xsi:type="array">
-                                    <item name="children" xsi:type="array">
-                                        <item name="summary" xsi:type="array">
-                                            <item name="children" xsi:type="array">
-                                                <item name="summary-discount" xsi:type="array">
-                                                    <item name="component" xsi:type="string">Magento_SalesRule/js/view/payment/discount</item>
-                                                    <item name="children" xsi:type="array">
-                                                        <item name="errors" xsi:type="array">
-                                                            <item name="sortOrder" xsi:type="string">0</item>
-                                                            <item name="component" xsi:type="string">Magento_SalesRule/js/view/payment/discount-messages</item>
-                                                            <item name="displayArea" xsi:type="string">messages</item>
-                                                        </item>
-                                                    </item>
-                                                </item>
-                                            </item>
-                                        </item>
-                                    </item>
-                                </item>
-                            </item>
-                        </item>
-                    </item>
-                </argument>
-            </arguments>
-        </referenceBlock>
-    </body>
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceBlock name="checkout.root">
+			<arguments>
+				<argument name="jsLayout" xsi:type="array">
+					<item name="components" xsi:type="array">
+						<item name="checkout" xsi:type="array">
+							<item name="children" xsi:type="array">
+								<item name="steps" xsi:type="array">
+									<item name="children" xsi:type="array">
+										<item name="billing-step" xsi:type="array">
+											<item name="children" xsi:type="array">
+												<item name="payment" xsi:type="array">
+													<item name="children" xsi:type="array">
+														<item name="renders" xsi:type="array">
+															<item name="children" xsi:type="array">
+																<item name="pagopar_cobros" xsi:type="array">
+																	<item name="component" xsi:type="string">Pagopar_Magento2/js/view/payment/pagopar_cobros</item>
+																	<item name="methods" xsi:type="array">
+																		<item name="pagopar_cobros" xsi:type="array">
+																			<item name="isBillingAddressRequired" xsi:type="boolean">true</item>
+																		</item>
+																	</item>
+																</item>
+															</item>
+														</item>
+													</item>
+												</item>
+											</item>
+										</item>
+									</item>
+								</item>
+							</item>
+						</item>
+					</item>
+				</argument>
+			</arguments>
+		</referenceBlock>
+	</body>
 </page>

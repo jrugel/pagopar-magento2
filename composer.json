@@ -1,23 +1,26 @@
 {
-    "name": "pagopar/magento2",
-    "version": "0.0.1",
+    "name": "pagopar/module-magento2",
+    "description": "Implementaci\u00f3n de Pagopar para Magento 2",
     "type": "magento2-module",
-    "description": "Implementación de pasarela de cobros PagoPar para Magento 2.",
-    "keywords": [
-        "pagopar",
-        "magento",
-        "bancard",
-        "tigo money",
-        "billetera personal"
-    ],
-    "homepage": "https://pagopar.com",
     "license": "MIT",
     "authors": [
         {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        },
+        {
             "name": "Javier Rugel",
-            "email": "hola@javierrugel.com",
-            "homepage": "https://javierrugel.com",
-            "role": "Developer"
+            "email": "hola@javierrugel.com"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Pagopar\\Magento2\\": ""
+        }
+    }
 }
